@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Studenda.IPhone8Plus"
+             BackgroundColor="#AC94F4"
+             MinimumHeightRequest="100"
+             MinimumWidthRequest="75"
+             HeightRequest="1034"
+             WidthRequest="750"
+             Title="StudendaDota2Padge">
+
+    <VerticalStackLayout 
+            Spacing="0"
+            Padding="30,0">
+        <Frame
+            BackgroundColor="White"
+            HorizontalOptions="Center"
+            WidthRequest="225"
+            HeightRequest="225"
+            CornerRadius="30"
+            Margin="10"/>
+        <Label 
+            Text="Sign in"
+            FontSize="24"
+            HorizontalOptions="Center" 
+            TextColor="White"
+            Margin="0,20,0,20"/>
+        <Label Text="Login"
+               FontSize="20"
+               HorizontalOptions="Center" 
+               TextColor="White"
+               Margin="0,0,270,8"/>
+        <Border HorizontalOptions="Center"
+                BackgroundColor="White">
+            <Entry
+                Placeholder="Login"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                WidthRequest="340">
+            </Entry>
+        </Border>
+
+        <Label Text="Passwoed"
+               FontSize="20"
+               HorizontalOptions="Center" 
+               TextColor="White"
+               Margin="0,0,240,10"/>
+        
+        <Border HorizontalOptions="Center"
+                BackgroundColor="White">
+            <Entry
+                   Placeholder="Password"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   IsPassword="True"
+                   WidthRequest="340">
+            </Entry>
+        </Border>
+        <Button Text="Sign In"
+                FontSize="18"
+                HorizontalOptions="Center"
+                WidthRequest="340"
+                CornerRadius="5"
+                Margin="35"
+                BackgroundColor="#371F76"/>
+        <Button Text="Forgot password"
+                FontSize="20"
+                HorizontalOptions="Center" 
+                TextColor="#371F76"
+                BackgroundColor="Transparent"
+                Margin="0,0,240,0" />
+        <Button Text="Sign Up"
+                FontSize="20"
+                HorizontalOptions="Center" 
+                TextColor="#371F76"
+                BackgroundColor="Transparent"
+                Margin="0,-50,-240,0" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
