@@ -8,6 +8,12 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+
+                <ResourceDictionary Source="Resources/Styles/Theme/AppButtonTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/TextButtonTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/SignEntryTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/EntryBorderTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/WhiteLabelTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

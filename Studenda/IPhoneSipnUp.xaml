@@ -21,61 +21,44 @@
             Margin="10"/>
         <Label 
             Text="Sign in"
+            Style="{StaticResource WhiteBorderTheme}"
             FontSize="24"
-            HorizontalOptions="Center" 
-            TextColor="White"
             Margin="0,20,0,20"/>
         <Label Text="Login"
+               Style="{StaticResource WhiteBorderTheme}"
                FontSize="20"
-               HorizontalOptions="Center" 
-               TextColor="White"
                Margin="0,0,270,8"/>
-        <Border HorizontalOptions="Center"
-                BackgroundColor="White">
+        <Border Style="{StaticResource EntryBorderTheme}">
             <Entry
                 Placeholder="Login"
-                FontSize="18"
-                HorizontalOptions="Center"
-                TextColor="Black"
+                Style="{StaticResource SignEntryTheme}"
                 WidthRequest="340">
             </Entry>
         </Border>
 
-        <Label Text="Passwoed"
+        <Label Text="Password"
+               Style="{StaticResource WhiteBorderTheme}"
                FontSize="20"
-               HorizontalOptions="Center" 
-               TextColor="White"
                Margin="0,0,240,10"/>
         
-        <Border HorizontalOptions="Center"
-                BackgroundColor="White">
+        <Border Style="{StaticResource EntryBorderTheme}">
             <Entry
                    Placeholder="Password"
-                   FontSize="18"
-                   HorizontalOptions="Center"
-                   TextColor="Black"
+                   Style="{StaticResource SignEntryTheme}"
                    IsPassword="True"
                    WidthRequest="340">
             </Entry>
         </Border>
         <Button Text="Sign In"
-                FontSize="18"
-                HorizontalOptions="Center"
+                Style="{StaticResource AppButton}"
                 WidthRequest="340"
-                CornerRadius="5"
-                Margin="35"
+                Margin="30"
                 BackgroundColor="{DynamicResource ButtonColor }"/>
         <Button Text="Forgot password"
-                FontSize="20"
-                HorizontalOptions="Center" 
-                TextColor="{DynamicResource ButtonColor}"
-                BackgroundColor="Transparent"
+                Style="{StaticResource TextButton}"
                 Margin="0,0,240,0" />
         <Button Text="Sign Up"
-                FontSize="20"
-                HorizontalOptions="Center" 
-                TextColor="{DynamicResource ButtonColor}"
-                BackgroundColor="Transparent"
+                Style="{StaticResource TextButton}"
                 Margin="0,-50,-240,0" />
 
     </VerticalStackLayout>

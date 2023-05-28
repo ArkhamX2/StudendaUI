@@ -6,10 +6,11 @@
     xmlns:local="clr-namespace:Studenda"
     Shell.FlyoutBehavior="Disabled"
     HeightRequest="1034"
-             WidthRequest="750">
+    WidthRequest="750"
+    BackgroundColor="{DynamicResource PanelColor}">
 
     <ShellContent
-        Title="Home"
+        Title="Studenda"
         ContentTemplate="{DataTemplate local:IPhone8Plus}"
         Route="IPhone8Plus" />
 
