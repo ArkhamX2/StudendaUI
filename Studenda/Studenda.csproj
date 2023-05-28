@@ -53,19 +53,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="IPhoneSipnUp.xaml.cs">
+	  <Compile Update="PhonePages\IPhoneChoseRole.xaml.cs">
+	    <DependentUpon>IPhoneChoseRole.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="PhonePages\IPhoneSipnUp.xaml.cs">
 	    <DependentUpon>IPhoneSipnUp.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="IPhoneChoseRolexaml.xaml">
+	  <MauiXaml Update="PhonePages\IPhoneChoseRole.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="IPhoneSchedule.xaml">
+	  <MauiXaml Update="PhonePages\IPhoneProfile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="IPhoneSipnUp.xaml">
+	  <MauiXaml Update="PhonePages\IPhoneSchedule.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PhonePages\IPhoneSipnUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\Theme\AppButtonTheme.xaml">
