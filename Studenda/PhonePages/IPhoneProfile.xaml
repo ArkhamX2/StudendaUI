@@ -5,7 +5,7 @@
              Title="IPhoneProfile"
              BackgroundColor="{DynamicResource SecondaryWindowBackgroundColor}">
     <Grid>
-        <Border Style="{StaticResource EntryBorderTheme}"
+        <Border Style="{StaticResource ProfileBorderTheme}"
                 HeightRequest="160"
                 WidthRequest="160"
                 HorizontalOptions="Start"
@@ -13,41 +13,23 @@
                 Margin="20,20,0,0">
             <ImageButton/>
         </Border>
-        <Border Style="{StaticResource EntryBorderTheme}"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                HeightRequest="26"
-                WidthRequest="200"
+        <Border Style="{StaticResource ProfileBorderTheme}"
                 Margin="200,50,10,10">
             <Entry Placeholder="Name"
-                   TextColor="Black"
-                   VerticalTextAlignment="Start"
-                   FontSize="12"/>
+                   Style="{StaticResource ProfileEntryTheme}"/>
         </Border>
-        <Border Style="{StaticResource EntryBorderTheme}"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                HeightRequest="26"
-                WidthRequest="200"
+        <Border Style="{StaticResource ProfileBorderTheme}"
                 Margin="200,85,10,10">
             <Entry Placeholder="Surname"
-                   TextColor="Black"
-                   VerticalTextAlignment="Start"
-                   FontSize="12"/>
+                   Style="{StaticResource ProfileEntryTheme}"/>
         </Border>
-        <Border Style="{StaticResource EntryBorder}"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                HeightRequest="26"
-                WidthRequest="200"
+        <Border Style="{StaticResource ProfileBorderTheme}"
                 Margin="200,120,10,10">
             <Grid>
-                <Entry Placeholder="Surname"
-                       TextColor="Black"
-                       VerticalTextAlignment="Start"
+                <Entry Placeholder="Date of birth"
+                       Style="{StaticResource ProfileEntryTheme}"
                        HorizontalOptions="Start"
-                       WidthRequest="155"
-                       FontSize="12"/>
+                       WidthRequest="155"/>
                 <DatePicker x:Name="DateOfBirth"
                         HorizontalOptions="Center"
                         BackgroundColor="Gray"
@@ -56,5 +38,31 @@
             </Grid>
             
         </Border>
+        <Border Style="{StaticResource ProfileBorderTheme}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="20,200,0,0">
+            <Entry Placeholder="Faculty"
+                   Style="{StaticResource ProfileEntryTheme}"
+                   />
+        </Border>
+        <Border Style="{StaticResource ProfileBorderTheme}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="20,235,0,0">
+            <Entry Placeholder="Course"
+                   Style="{StaticResource ProfileEntryTheme}"
+                   />
+        </Border>
+        <Border Style="{StaticResource ProfileBorderTheme}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="20,270,0,0">
+            <Entry Placeholder="Group"
+                   Style="{StaticResource ProfileEntryTheme}"
+                   />
+        </Border>
+
+
     </Grid>
 </ContentPage>

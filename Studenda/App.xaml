@@ -14,6 +14,8 @@
                 <ResourceDictionary Source="Resources/Styles/Theme/SignEntryTheme.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/Theme/SignEntryBorderTheme.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/Theme/WhiteLabelTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/ProfileEntryTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/ProfileBorderTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
