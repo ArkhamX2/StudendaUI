@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Studenda.IPhone8Plus"
-             BackgroundColor="#AC94F4"
+             BackgroundColor="{DynamicResource SecondaryWindowBackgroundColor}"
              MinimumHeightRequest="100"
              MinimumWidthRequest="75"
              HeightRequest="1034"
@@ -64,17 +64,17 @@
                 WidthRequest="340"
                 CornerRadius="5"
                 Margin="35"
-                BackgroundColor="#371F76"/>
+                BackgroundColor="{DynamicResource ButtonColor }"/>
         <Button Text="Forgot password"
                 FontSize="20"
                 HorizontalOptions="Center" 
-                TextColor="#371F76"
+                TextColor="{DynamicResource ButtonColor}"
                 BackgroundColor="Transparent"
                 Margin="0,0,240,0" />
         <Button Text="Sign Up"
                 FontSize="20"
                 HorizontalOptions="Center" 
-                TextColor="#371F76"
+                TextColor="{DynamicResource ButtonColor}"
                 BackgroundColor="Transparent"
                 Margin="0,-50,-240,0" />
 
