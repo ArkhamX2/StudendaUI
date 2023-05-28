@@ -59,6 +59,9 @@
 	  <Compile Update="PhonePages\IPhoneSipnUp.xaml.cs">
 	    <DependentUpon>IPhoneSipnUp.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Styles\Theme\SignEntryBorderTheme.xaml.cs">
+	    <DependentUpon>SignEntryBorderTheme.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -77,7 +80,13 @@
 	  <MauiXaml Update="Resources\Styles\Theme\AppButtonTheme.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Styles\Theme\EntryBorderTheme.xaml">
+	  <MauiXaml Update="Resources\Styles\Theme\ProfileBorderTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Theme\SignEntryBorderTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Theme\ProfileEntryTheme.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\Theme\SignEntryTheme.xaml">

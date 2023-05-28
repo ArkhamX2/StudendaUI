@@ -1,4 +1,4 @@
-namespace Studenda;
+namespace Studenda.PhonePages;
 
 public partial class IPhoneChoseRole : ContentPage
 {
