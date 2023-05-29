@@ -11,7 +11,7 @@
 
     <ShellContent
         Title="Studenda"
-        ContentTemplate="{DataTemplate local:IPhoneProfile}"
-        Route="IPhoneProfile" />
+        ContentTemplate="{DataTemplate local:IPhoneSchedule}"
+        Route="IPhoneSchedule" />
 
 </Shell>

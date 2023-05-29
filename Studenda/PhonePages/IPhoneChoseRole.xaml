@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Studenda.PhonePages.IPhoneChoseRole"
              Title="IPhoneChoseRolexaml"
-             BackgroundColor="{DynamicResource SecondaryWindowBackgroundColor}">
+             BackgroundColor="{DynamicResource MainWindowBackgroundColor}">
     
     <VerticalStackLayout Spacing="20">
         <Button Text="Profile"

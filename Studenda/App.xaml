@@ -16,6 +16,7 @@
                 <ResourceDictionary Source="Resources/Styles/Theme/WhiteLabelTheme.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/Theme/ProfileEntryTheme.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/Theme/ProfileBorderTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Theme/DayLabelTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

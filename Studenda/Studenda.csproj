@@ -80,6 +80,9 @@
 	  <MauiXaml Update="Resources\Styles\Theme\AppButtonTheme.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Theme\DayLabelTheme.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\Theme\ProfileBorderTheme.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
