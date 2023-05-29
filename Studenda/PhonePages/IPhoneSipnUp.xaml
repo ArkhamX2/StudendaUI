@@ -28,10 +28,11 @@
                Style="{StaticResource WhiteBorderTheme}"
                FontSize="20"
                Margin="0,0,270,8"/>
-        <Border Style="{StaticResource EntryBorderTheme}">
+        <Border Style="{StaticResource SignEntryBorderTheme}">
             <Entry
                 Placeholder="Login"
                 Style="{StaticResource SignEntryTheme}"
+                MaxLength="32"
                 WidthRequest="340">
             </Entry>
         </Border>
@@ -41,10 +42,11 @@
                FontSize="20"
                Margin="0,0,240,10"/>
         
-        <Border Style="{StaticResource EntryBorderTheme}">
+        <Border Style="{StaticResource SignEntryBorderTheme}">
             <Entry
                    Placeholder="Password"
-                   Style="{StaticResource SignEntryTheme}"
+                   Style="{StaticResource  SignEntryTheme}"
+                   MaxLength="16"
                    IsPassword="True"
                    WidthRequest="340">
             </Entry>
@@ -53,7 +55,7 @@
                 Style="{StaticResource AppButton}"
                 WidthRequest="340"
                 Margin="30"
-                BackgroundColor="{DynamicResource ButtonColor }"/>
+                BackgroundColor="{DynamicResource ButtonColor}"/>
         <Button Text="Forgot password"
                 Style="{StaticResource TextButton}"
                 Margin="0,0,240,0" />

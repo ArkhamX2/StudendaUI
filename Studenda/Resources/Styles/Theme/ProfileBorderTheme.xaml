@@ -8,6 +8,7 @@
         <Setter Property="HeightRequest" Value="26"/>
         <Setter Property="WidthRequest" Value="200"/>
         <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 5"/>
     </Style>
 
 </ResourceDictionary>
