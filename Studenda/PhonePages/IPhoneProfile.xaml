@@ -28,9 +28,10 @@
             <Grid>
                 <Entry Placeholder="Date of birth"
                        Style="{StaticResource ProfileEntryTheme}"
+                       IsReadOnly="True"
                        HorizontalOptions="Start"
                        WidthRequest="155"/>
-                <DatePicker x:Name="DateOfBirth"
+                <DatePicker x:Name="DateOfBirth"                           
                         HorizontalOptions="Center"
                         BackgroundColor="Gray"
                         TextColor="Black"
@@ -59,6 +60,7 @@
                 VerticalOptions="Start"
                 Margin="20,270,0,0">
             <Entry Placeholder="Group"
+                   MaxLength="16"
                    Style="{StaticResource ProfileEntryTheme}"
                    />
         </Border>

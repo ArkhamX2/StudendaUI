@@ -18,11 +18,11 @@ public partial class App : Application
     private async void Window_Activated(object sender, EventArgs e)
     {
 #if WINDOWS
-        const int DefaultWidth = 1600;
-        const int DefaultHeight = 800;
+        const int DefaultWidth = 1368;
+        const int DefaultHeight = 760;
 
-        const int MinimumWidth = 1050;
-        const int MinimumHeight = 700;
+        const int MinimumWidth = 440;
+        const int MinimumHeight = 720;
 
         var window = sender as Window;
 

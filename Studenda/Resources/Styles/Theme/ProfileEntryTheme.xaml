@@ -6,6 +6,6 @@
         <Setter Property="VerticalTextAlignment" Value="Start"/>
         <Setter Property="TextColor" Value="Black"/>
         <Setter Property="FontSize" Value="12"/>
-    </Style>
+        <Setter Property="MaxLength" Value="24"/>
 
 </ResourceDictionary>
