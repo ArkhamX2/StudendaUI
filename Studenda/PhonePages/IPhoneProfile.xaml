@@ -46,6 +46,7 @@
                 Margin="20,200,0,0">
             <Entry Placeholder="Faculty"
                    Style="{StaticResource ProfileEntryTheme}"
+                   Margin="0,0,0,-4"
                    />
         </Border>
         <Border Style="{StaticResource ProfileBorderTheme}"
@@ -54,6 +55,7 @@
                 Margin="20,235,0,0">
             <Entry Placeholder="Course"
                    Style="{StaticResource ProfileEntryTheme}"
+                   Margin="0,0,0,-4"
                    />
         </Border>
         <Border Style="{StaticResource ProfileBorderTheme}"
@@ -63,6 +65,8 @@
             <Entry Placeholder="Group"
                    MaxLength="16"
                    Style="{StaticResource ProfileEntryTheme}"
+                   Margin="0,0,0,-4"
+                   BackgroundColor="Transparent"
                    />
         </Border>
 

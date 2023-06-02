@@ -5,7 +5,7 @@
     <Style TargetType="{x:Type Border}" x:Key="ProfileBorderTheme">
         <Setter Property="HorizontalOptions" Value="Start"/>
         <Setter Property="VerticalOptions" Value="Start"/>
-        <Setter Property="HeightRequest" Value="26"/>
+        <Setter Property="HeightRequest" Value="36"/>
         <Setter Property="WidthRequest" Value="200"/>
         <Setter Property="BackgroundColor" Value="White"/>
         <Setter Property="StrokeShape" Value="RoundRectangle 5"/>
