@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Studenda.ViewModel
+namespace Studenda.Utils
 {
     public class UIConverter
     {

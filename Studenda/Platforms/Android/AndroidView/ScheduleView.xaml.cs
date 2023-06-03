@@ -1,9 +1,11 @@
-namespace Studenda.PhonePages;
+namespace Studenda.Android.AndroidView;
 
-public partial class IPhoneSchedule : ContentPage
+public partial class ScheduleView : ContentPage
 {
-	public IPhoneSchedule()
+	public ScheduleView()
 	{
-		InitializeComponent();
+        InitializeComponent();
+
 	}
+
 }

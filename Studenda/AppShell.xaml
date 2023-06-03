@@ -3,7 +3,7 @@
     x:Class="Studenda.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Studenda.PhonePages"
+    xmlns:local="clr-namespace:Studenda.Android.AndroidView"
     Shell.FlyoutBehavior="Disabled"
     HeightRequest="1034"
     WidthRequest="750"
@@ -11,7 +11,7 @@
 
     <ShellContent
         Title="Studenda"
-        ContentTemplate="{DataTemplate  local:IPhoneProfile}"
+        ContentTemplate="{DataTemplate  local:ProfileView}"
         Route="IPhoneSignUp" />
 
 </Shell>

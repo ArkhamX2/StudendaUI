@@ -1,8 +1,8 @@
-namespace Studenda.PhonePages;
+namespace Studenda.Android.AndroidView;
 
-public partial class IPhoneChoseRole : ContentPage
+public partial class ChoseRoleView : ContentPage
 {
-	public IPhoneChoseRole()
+	public ChoseRoleView()
 	{
 		InitializeComponent();
 	}

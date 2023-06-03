@@ -1,8 +1,8 @@
-namespace Studenda.PhonePages;
+namespace Studenda.Android.AndroidView;
 
-public partial class IPhoneProfile : ContentPage
+public partial class ProfileView : ContentPage
 {
-	public IPhoneProfile()
+	public ProfileView()
 	{
 		InitializeComponent();
 	}
