@@ -49,14 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="PhonePages\IPhoneChoseRole.xaml.cs">
+	  <Compile Update="Platforms\Android\PhonePages\IPhoneChoseRole.xaml.cs">
 	    <DependentUpon>IPhoneChoseRole.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="PhonePages\IPhoneSipnUp.xaml.cs">
+	  <Compile Update="Platforms\Android\PhonePages\IPhoneSipnUp.xaml.cs">
 	    <DependentUpon>IPhoneSipnUp.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Resources\Styles\Theme\SignEntryBorderTheme.xaml.cs">
@@ -65,16 +66,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="PhonePages\IPhoneChoseRole.xaml">
+	  <MauiXaml Update="Platforms\Android\PhonePages\IPhoneChoseRole.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PhonePages\IPhoneProfile.xaml">
+	  <MauiXaml Update="Platforms\Android\PhonePages\IPhoneProfile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PhonePages\IPhoneSchedule.xaml">
+	  <MauiXaml Update="Platforms\Android\PhonePages\IPhoneSchedule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="PhonePages\IPhoneSipnUp.xaml">
+	  <MauiXaml Update="Platforms\Android\PhonePages\IPhoneSipnUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\Theme\AppButtonTheme.xaml">
