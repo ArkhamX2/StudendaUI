@@ -1,10 +1,14 @@
-﻿namespace Studenda;
+﻿using Studenda.ViewModel;
+
+namespace Studenda;
 
 public partial class App : Application
 {
 	public App()
 	{
 		InitializeComponent();
+
+        MainViewModel mainViewModel = new MainViewModel();
 
 		MainPage = new AppShell();
 	}
@@ -17,6 +21,11 @@ public partial class App : Application
 
     private async void Window_Activated(object sender, EventArgs e)
     {
+
+#if ANDROID
+    
+#endif
+
 #if WINDOWS
         const int DefaultWidth = 1368;
         const int DefaultHeight = 760;
