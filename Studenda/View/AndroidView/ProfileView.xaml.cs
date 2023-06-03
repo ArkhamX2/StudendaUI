@@ -1,4 +1,4 @@
-namespace Studenda.Android.AndroidView;
+namespace Studenda.View;
 
 public partial class ProfileView : ContentPage
 {

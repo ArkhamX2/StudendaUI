@@ -54,16 +54,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Platforms\Android\AndroidView\ChoseRoleView.xaml.cs">
+	  <Compile Update="View\AndroidView\ChoseRoleView.xaml.cs">
 	    <DependentUpon>ChoseRoleView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Platforms\Android\AndroidView\ScheduleView.xaml.cs">
+	  <Compile Update="View\AndroidView\ScheduleView.xaml.cs">
 	    <DependentUpon>ScheduleView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Platforms\Android\AndroidView\ProfileView.xaml.cs">
+	  <Compile Update="View\AndroidView\ProfileView.xaml.cs">
 	    <DependentUpon>ProfileView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Platforms\Android\AndroidView\LogInView.xaml.cs">
+	  <Compile Update="View\AndroidView\LogInView.xaml.cs">
 	    <DependentUpon>LogInView.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Resources\Styles\Theme\SignEntryBorderTheme.xaml.cs">
@@ -72,16 +72,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Platforms\Android\AndroidView\ChoseRoleView.xaml">
+	  <MauiXaml Update="View\AndroidView\ChoseRoleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Platforms\Android\AndroidView\ProfileView.xaml">
+	  <MauiXaml Update="View\AndroidView\ProfileView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Platforms\Android\AndroidView\ScheduleView.xaml">
+	  <MauiXaml Update="View\AndroidView\ScheduleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Platforms\Android\AndroidView\LogInView.xaml">
+	  <MauiXaml Update="View\AndroidView\LogInView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\Theme\AppButtonTheme.xaml">

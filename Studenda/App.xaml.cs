@@ -1,4 +1,5 @@
-﻿using Studenda.ViewModel;
+﻿using Studenda.View;
+using Studenda.ViewModel;
 
 namespace Studenda;
 
@@ -10,8 +11,8 @@ public partial class App : Application
 
         MainViewModel mainViewModel = new MainViewModel();
 
-		MainPage = new AppShell();
-	}
+        MainPage = new AppShell();
+    }
     protected override Window CreateWindow(IActivationState activationState)
     {
         Window window = base.CreateWindow(activationState);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Studenda.Android.AndroidView.LogInView"
+             x:Class="Studenda.View.LogInView"
              BackgroundColor="{DynamicResource SecondaryWindowBackgroundColor}"
              MinimumHeightRequest="100"
              MinimumWidthRequest="75"
@@ -55,13 +55,16 @@
                 Style="{StaticResource AppButton}"
                 WidthRequest="340"
                 Margin="30"
-                BackgroundColor="{DynamicResource ButtonColor}"/>
+                BackgroundColor="{DynamicResource ButtonColor}"
+                Command="{Binding GoToScheduleViewCommand}"    
+                />
         <Button Text="Forgot password"
                 Style="{StaticResource TextButton}"
                 Margin="0,0,240,0" />
         <Button Text="Sign Up"
                 Style="{StaticResource TextButton}"
-                Margin="0,-50,-240,0" />
+                Margin="0,-50,-240,0"            
+                />
 
     </VerticalStackLayout>
 

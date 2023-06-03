@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Studenda.Android.AndroidView.ScheduleView"
+             x:Class="Studenda.View.ScheduleView"
              Title="IPhoneSchedule"
              BackgroundColor="{DynamicResource MainWindowBackgroundColor}">
     <ScrollView>
@@ -13,7 +13,14 @@
             <VerticalStackLayout x:Name="ScheduleLayout">
 
             </VerticalStackLayout>
-            
+
+            <Button Text="Sign In"
+                Style="{StaticResource AppButton}"
+                WidthRequest="340"
+                Margin="30"
+                BackgroundColor="{DynamicResource ButtonColor}"
+                Command="{Binding GoToProfileViewCommand}"
+                />
 
         </VerticalStackLayout>
     </ScrollView>
