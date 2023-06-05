@@ -1,4 +1,5 @@
-﻿using Studenda.View;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Studenda.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ using System.Xml.Linq;
 
 namespace Studenda.ViewModel
 {
-    public class MainViewModel
+    [ObservableObject]
+    public partial class MainViewModel
     {
 
     }

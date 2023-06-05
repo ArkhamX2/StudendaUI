@@ -1,4 +1,6 @@
-﻿using Studenda.View;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Studenda.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +10,15 @@ using System.Windows.Input;
 
 namespace Studenda.ViewModel
 {
-    internal class ScheduleViewModel
+    [ObservableObject]
+    public partial class ScheduleViewModel
     {
-        public ICommand GoToProfileViewCommand { get; set; }
         public ScheduleViewModel()
         {
-            GoToProfileViewCommand = new Command(GoToProfileView);
         }
-        async void GoToProfileView()
+
+        [RelayCommand]
+        async private void GoToProfileView()
         {
             await Shell.Current.GoToAsync($"{nameof(ProfileView)}");
         }
