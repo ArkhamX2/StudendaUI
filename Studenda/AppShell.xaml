@@ -12,7 +12,7 @@
     <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Studenda"
         ContentTemplate="{DataTemplate local:LogInView}"
-        Route="LoginInView" />
+        Route="LogInView" />
 
     <FlyoutItem Route="ScheduleView" FlyoutDisplayOptions="AsMultipleItems">
     <ShellContent
@@ -24,5 +24,11 @@
         ContentTemplate="{DataTemplate local:ProfileView}"
          />
     </FlyoutItem>
-
+    
+    <Shell.FlyoutFooter>
+        <StackLayout>
+            <Button Text="Выйти" Command="{Binding LogOutCommand}"/>
+        </StackLayout>
+    </Shell.FlyoutFooter>
+    
 </Shell>
