@@ -9,7 +9,10 @@
     MinimumHeightRequest="100"
     MinimumWidthRequest="75"
     WidthRequest="750">
-    <VerticalStackLayout Padding="30,0" Spacing="0">
+    <VerticalStackLayout
+        x:Name="LoginPageStackLayout"
+        Padding="30,0"
+        Spacing="0">
 
         <Frame
             Margin="10"
@@ -70,12 +73,12 @@
             Text="Sign In"
             WidthRequest="340" />
         <HorizontalStackLayout>
-            <CheckBox BackgroundColor="Black"
-                      HeightRequest="20"
-                      WidthRequest="20"
-                      HorizontalOptions="Center"/>
-            <Label Margin="0"
-                   Style="{StaticResource WhiteLabelTheme}"/>
+            <CheckBox
+                BackgroundColor="Black"
+                HeightRequest="20"
+                HorizontalOptions="Center"
+                WidthRequest="20" />
+            <Label Margin="0" Style="{StaticResource WhiteLabelTheme}" />
         </HorizontalStackLayout>
 
         <HorizontalStackLayout>
@@ -86,6 +89,7 @@
 
             <Button
                 Margin="80,0,0,0"
+                Command="{Binding CreateCommand}"
                 Style="{StaticResource TextButton}"
                 Text="Sign Up" />
         </HorizontalStackLayout>
