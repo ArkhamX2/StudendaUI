@@ -4,22 +4,31 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Studenda.View"
+    Shell.TabBarIsVisible="False"
     BackgroundColor="{DynamicResource PanelColor}"
     HeightRequest="1034"
-    Shell.FlyoutBehavior="Disabled"
     WidthRequest="750">
 
-    <ShellContent
+    <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Studenda"
         ContentTemplate="{DataTemplate local:LogInView}"
-        Route="LoginInView" />
-    <ShellContent
-        Title="Studenda"
-        ContentTemplate="{DataTemplate local:ScheduleView}"
-        Route="ScheduleView" />
-    <ShellContent
-        Title="Studenda"
-        ContentTemplate="{DataTemplate local:ProfileView}"
-        Route="ProfileView" />
+        Route="LogInView" />
 
+    <FlyoutItem Route="ScheduleView" FlyoutDisplayOptions="AsMultipleItems">
+    <ShellContent
+        Title="ScheduleView"
+        ContentTemplate="{DataTemplate local:ScheduleView}"
+         />
+    <ShellContent
+        Title="ProfileView"
+        ContentTemplate="{DataTemplate local:ProfileView}"
+         />
+    </FlyoutItem>
+    
+    <Shell.FlyoutFooter>
+        <StackLayout>
+            <Button Text="Выйти" Command="{Binding LogOutCommand}"/>
+        </StackLayout>
+    </Shell.FlyoutFooter>
+    
 </Shell>
