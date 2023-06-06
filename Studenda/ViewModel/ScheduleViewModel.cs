@@ -10,9 +10,21 @@ using System.Windows.Input;
 
 namespace Studenda.ViewModel
 {
+    public enum WeekType
+    {
+        Red, Blue
+    }
+
     [ObservableObject]
     public partial class ScheduleViewModel
     {
+        [ObservableProperty]
+        private string weekBordersDate;
+
+        [ObservableProperty]
+        private WeekType typeOfWeek;
+
+
         public ScheduleViewModel()
         {
         }
@@ -23,4 +35,5 @@ namespace Studenda.ViewModel
             await Shell.Current.GoToAsync($"{nameof(ProfileView)}");
         }
     }
+
 }
