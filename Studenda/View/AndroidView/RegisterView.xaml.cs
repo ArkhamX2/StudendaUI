@@ -1,4 +1,4 @@
-namespace Studenda.View.AndroidView;
+namespace Studenda.View;
 
 public partial class RegisterView : ContentPage
 {

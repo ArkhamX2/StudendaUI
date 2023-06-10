@@ -1,5 +1,4 @@
 ﻿using Studenda.View;
-using Studenda.View.AndroidView;
 using Studenda.ViewModel;
 
 namespace Studenda;

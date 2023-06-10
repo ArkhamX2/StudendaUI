@@ -34,6 +34,7 @@ namespace Studenda.ViewModel
         {
             await Shell.Current.GoToAsync($"{nameof(ProfileView)}");
         }
+
     }
 
 }

@@ -22,6 +22,14 @@
                 Command="{Binding GoToProfileViewCommand}"
                 />
 
+            <Button Text="Sign In"
+                Style="{StaticResource AppButton}"
+                WidthRequest="340"
+                Margin="30"
+                BackgroundColor="{DynamicResource ButtonColor}"
+                Command="{Binding GoToQwertyCommand}"
+                />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

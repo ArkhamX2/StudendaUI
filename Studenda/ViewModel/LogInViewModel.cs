@@ -2,7 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using Studenda.View;
-using Studenda.View.AndroidView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +37,7 @@ namespace Studenda.ViewModel
         [RelayCommand]
         async private void GoToRegisterView()
         {
-            await Shell.Current.GoToAsync($"//{nameof(RegisterView)}");
+            await Shell.Current.GoToAsync($"{nameof(RegisterView)}");
         }
 
         [RelayCommand]
@@ -59,7 +58,7 @@ namespace Studenda.ViewModel
                 //Alert user about something
                 await Application.Current.MainPage.DisplayAlert(
                     "Submit",
-                    $"You entered {username} and {Password}",
+                    $"You entered {Username} and {Password}",
                     "OK");
             }
             catch (Exception e)

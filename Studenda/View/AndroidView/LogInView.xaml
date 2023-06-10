@@ -83,12 +83,12 @@
 
         <HorizontalStackLayout>
             <Button
-                Margin="160,0,0,0"
+                Margin="0,0,0,0"
                 Style="{StaticResource TextButton}"
                 Text="Forgot password" />
 
             <Button
-                Margin="80,0,0,0"
+                Margin="30,0,0,0"
                 Command="{Binding CreateCommand}"
                 Style="{StaticResource TextButton}"
                 Text="Sign Up" />
