@@ -1,8 +1,8 @@
 namespace Studenda.View.AndroidView;
 
-public partial class ProfileView : ContentPage
+public partial class SignUpView : ContentPage
 {
-	public ProfileView()
+	public SignUpView()
 	{
 		InitializeComponent();
 	}

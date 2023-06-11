@@ -59,6 +59,9 @@
 	  <Compile Update="View\AndroidView\ChoseRoleView.xaml.cs">
 	    <DependentUpon>ChoseRoleView.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\AndroidView\SignUpView.xaml.cs">
+	    <DependentUpon>SignUpView.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\AndroidView\ScheduleView.xaml.cs">
 	    <DependentUpon>ScheduleView.xaml</DependentUpon>
 	  </Compile>
@@ -80,7 +83,7 @@
 	  <MauiXaml Update="View\AndroidView\ProfileView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\AndroidView\RegisterView.xaml">
+	  <MauiXaml Update="View\AndroidView\SignUpView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\AndroidView\ScheduleView.xaml">

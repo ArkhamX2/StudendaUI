@@ -1,15 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Studenda.ViewModel
 {
     [ObservableObject]
-    public partial class RegisterViewModel
+    public partial class SignUpViewModel
     {
         [ObservableProperty]
         private string username;
@@ -23,7 +18,7 @@ namespace Studenda.ViewModel
         [ObservableProperty]
         private string studentID;
 
-        public RegisterViewModel()
+        public SignUpViewModel()
         {
         }
 

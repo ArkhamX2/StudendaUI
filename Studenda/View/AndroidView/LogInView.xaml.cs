@@ -4,7 +4,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using Studenda.ViewModel;
 using System.Windows.Input;
 
-namespace Studenda.View;
+namespace Studenda.View.AndroidView;
 
 public partial class LogInView : ContentPage
 {

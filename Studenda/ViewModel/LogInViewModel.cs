@@ -1,14 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.Messaging;
-using Studenda.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using static Studenda.View.LogInView;
+using Studenda.View.AndroidView;
 
 namespace Studenda.ViewModel
 {
@@ -37,7 +29,7 @@ namespace Studenda.ViewModel
         [RelayCommand]
         async private void GoToRegisterView()
         {
-            await Shell.Current.GoToAsync($"{nameof(RegisterView)}");
+            await Shell.Current.GoToAsync($"{nameof(SignUpView)}");
         }
 
         [RelayCommand]

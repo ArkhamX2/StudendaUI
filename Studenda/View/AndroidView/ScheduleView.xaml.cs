@@ -1,6 +1,6 @@
 using Studenda.ViewModel;
 
-namespace Studenda.View;
+namespace Studenda.View.AndroidView;
 
 public partial class ScheduleView : ContentPage
 {

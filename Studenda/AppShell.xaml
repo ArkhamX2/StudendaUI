@@ -3,8 +3,8 @@
     x:Class="Studenda.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Studenda.View.AndroidView"
     xmlns:local="clr-namespace:Studenda.View"
-    xmlns:q="clr-namespace:Studenda.View.AndroidView"
     BackgroundColor="{DynamicResource PanelColor}"
     HeightRequest="1034"
     Shell.TabBarIsVisible="False"
@@ -12,22 +12,22 @@
 
     <ShellContent
         Title="Studenda"
-        ContentTemplate="{DataTemplate local:LogInView}"
+        ContentTemplate="{DataTemplate android:LogInView}"
         FlyoutItemIsVisible="False"
         Route="LogInView"
         Shell.FlyoutBehavior="Disabled" />
 
     <ShellContent
         Title="Register"
-        ContentTemplate="{DataTemplate local:RegisterView}"
+        ContentTemplate="{DataTemplate android:SignUpView}"
         FlyoutItemIsVisible="False"
         Route="RegisterView"
         Shell.FlyoutBehavior="Disabled" />
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="ScheduleView">
-        <ShellContent Title="ScheduleView" ContentTemplate="{DataTemplate local:ScheduleView}" />
-        <ShellContent Title="ProfileView" ContentTemplate="{DataTemplate local:ProfileView}" />
- 
+        <ShellContent Title="ScheduleView" ContentTemplate="{DataTemplate android:ScheduleView}" />
+        <ShellContent Title="ProfileView" ContentTemplate="{DataTemplate android:ProfileView}" />
+
     </FlyoutItem>
 
     <Shell.FlyoutFooter>

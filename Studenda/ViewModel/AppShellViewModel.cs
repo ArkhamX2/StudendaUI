@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Studenda.View;
+using Studenda.View.AndroidView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
