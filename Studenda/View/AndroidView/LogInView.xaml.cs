@@ -8,15 +8,10 @@ namespace Studenda.View.AndroidView;
 
 public partial class LogInView : ContentPage
 {
-    public partial class ConstructMessage { }
-
-    public static ProgressBar LoginProgressBar;
     LogInViewModel vm = new LogInViewModel();
     public LogInView()
 	{
-        LoginProgressBar = new ProgressBar();
         InitializeComponent();
-        LoginPageStackLayout.Children.Add(LoginProgressBar);
         BindingContext = vm;
 
     }

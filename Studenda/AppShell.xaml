@@ -18,16 +18,16 @@
         Shell.FlyoutBehavior="Disabled" />
 
     <ShellContent
-        Title="Register"
+        Title="SignUp"
         ContentTemplate="{DataTemplate android:SignUpView}"
         FlyoutItemIsVisible="False"
         Route="RegisterView"
         Shell.FlyoutBehavior="Disabled" />
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="ScheduleView">
-        <ShellContent Title="ScheduleView" ContentTemplate="{DataTemplate android:ScheduleView}" />
-        <ShellContent Title="ProfileView" ContentTemplate="{DataTemplate android:ProfileView}" />
-
+        <ShellContent Title="Schedule" ContentTemplate="{DataTemplate android:ScheduleView}" />
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate android:ProfileView}" />
+        <ShellContent Title="Notifications" ContentTemplate="{DataTemplate android:NotificationView}" />
     </FlyoutItem>
 
     <Shell.FlyoutFooter>

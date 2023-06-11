@@ -4,11 +4,12 @@ namespace Studenda.View.AndroidView;
 
 public partial class ScheduleView : ContentPage
 {
-	public ScheduleView()
+    ScheduleViewModel vm = new ScheduleViewModel();
+    public ScheduleView()
 	{
         InitializeComponent();
 
-        BindingContext = new ScheduleViewModel();
+        BindingContext = vm;
     }
 
 }

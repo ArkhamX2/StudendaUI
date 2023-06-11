@@ -39,12 +39,6 @@ namespace Studenda.ViewModel
             {
                 //TODO: Реализация входа в аккаунт
 
-                //Handle View elements
-                for (var i = 0.0; i < 1.0; i+=0.1)
-                {
-                    await LogInView.LoginProgressBar.ProgressTo(i, 500, Easing.Linear);
-                }
-
                 GoToScheduleView();
 
                 //Alert user about something

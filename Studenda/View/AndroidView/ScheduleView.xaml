@@ -16,15 +16,7 @@
                 BackgroundColor="{DynamicResource ButtonColor}"
                 Command="{Binding GoToProfileViewCommand}"
                 Style="{StaticResource AppButton}"
-                Text="Sign In"
-                WidthRequest="340" />
-
-            <Button
-                Margin="30"
-                BackgroundColor="{DynamicResource ButtonColor}"
-                Command="{Binding GoToQwertyCommand}"
-                Style="{StaticResource AppButton}"
-                Text="Sign In"
+                Text="Profile"
                 WidthRequest="340" />
 
         </VerticalStackLayout>
