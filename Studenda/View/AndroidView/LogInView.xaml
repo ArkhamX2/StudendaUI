@@ -76,7 +76,10 @@
                 HeightRequest="20"
                 HorizontalOptions="Center"
                 WidthRequest="20" />
-            <Label Margin="0" Style="{StaticResource WhiteLabelTheme}" />
+            <Label
+                Margin="0"
+                Style="{StaticResource WhiteLabelTheme}"
+                Text="Запомнить меня" />
         </HorizontalStackLayout>
 
         <HorizontalStackLayout>

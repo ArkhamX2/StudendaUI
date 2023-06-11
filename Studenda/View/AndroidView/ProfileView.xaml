@@ -19,9 +19,11 @@
         <Border Margin="200,50,10,10" Style="{StaticResource ProfileBorderTheme}">
             <local:StudendaEntry Placeholder="Name" Style="{StaticResource ProfileEntryTheme}" />
         </Border>
+
         <Border Margin="200,85,10,10" Style="{StaticResource ProfileBorderTheme}">
             <local:StudendaEntry Placeholder="Surname" Style="{StaticResource ProfileEntryTheme}" />
         </Border>
+
         <Border Margin="200,120,10,10" Style="{StaticResource ProfileBorderTheme}">
             <Grid>
                 <local:StudendaEntry
@@ -29,6 +31,7 @@
                     IsReadOnly="True"
                     Placeholder="Date of birth"
                     Style="{StaticResource ProfileEntryTheme}"
+                    Text="{Binding DateOfBirth}"
                     WidthRequest="155" />
                 <DatePicker
                     x:Name="DateOfBirth"
@@ -37,8 +40,8 @@
                     HorizontalOptions="Center"
                     TextColor="Black" />
             </Grid>
-
         </Border>
+
         <Border
             Margin="20,200,0,0"
             HorizontalOptions="Start"
@@ -47,8 +50,10 @@
             <local:StudendaEntry
                 Margin="0,0,0,-4"
                 Placeholder="Faculty"
-                Style="{StaticResource ProfileEntryTheme}" />
+                Style="{StaticResource ProfileEntryTheme}"
+                Text="{Binding Faculty.Name}" />
         </Border>
+
         <Border
             Margin="20,235,0,0"
             HorizontalOptions="Start"
@@ -57,8 +62,10 @@
             <local:StudendaEntry
                 Margin="0,0,0,-4"
                 Placeholder="Course"
-                Style="{StaticResource ProfileEntryTheme}" />
+                Text="{Binding Course.Name}"
+                Style="{StaticResource ProfileEntryTheme}"/>
         </Border>
+
         <Border
             Margin="20,270,0,0"
             HorizontalOptions="Start"
@@ -69,7 +76,8 @@
                 BackgroundColor="Transparent"
                 MaxLength="16"
                 Placeholder="Group"
-                Style="{StaticResource ProfileEntryTheme}" />
+                Style="{StaticResource ProfileEntryTheme}"
+                Text="{Binding Group.Name}" />
         </Border>
 
 
