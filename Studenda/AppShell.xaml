@@ -11,23 +11,23 @@
     WidthRequest="750">
 
     <ShellContent
-        Title="Studenda"
+        Title="Login page"
         ContentTemplate="{DataTemplate android:LogInView}"
         FlyoutItemIsVisible="False"
         Route="LogInView"
         Shell.FlyoutBehavior="Disabled" />
 
     <ShellContent
-        Title="SignUp"
+        Title="Sign Up"
         ContentTemplate="{DataTemplate android:SignUpView}"
         FlyoutItemIsVisible="False"
         Route="RegisterView"
         Shell.FlyoutBehavior="Disabled" />
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="ScheduleView">
-        <ShellContent Title="Schedule" ContentTemplate="{DataTemplate android:ScheduleView}" />
-        <ShellContent Title="Profile" ContentTemplate="{DataTemplate android:ProfileView}" />
-        <ShellContent Title="Notifications" ContentTemplate="{DataTemplate android:NotificationView}" />
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Schedule" ContentTemplate="{DataTemplate android:ScheduleView}" Route="ScheduleView" />
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate android:ProfileView}" Route="ProfileView"/>
+        <ShellContent Title="Notifications" ContentTemplate="{DataTemplate android:NotificationView}" Route="NotificationView"/>
     </FlyoutItem>
 
     <Shell.FlyoutFooter>
