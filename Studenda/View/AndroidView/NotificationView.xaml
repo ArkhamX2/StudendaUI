@@ -5,6 +5,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="NotificationView">
     <VerticalStackLayout>
-        <ListView ItemsSource="{Binding NotificationCollection}" />
+        <ListView ItemsSource="{Binding NotificationCollection}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label FontSize="18" Text="{Binding Name}" />
+                                <Label FontSize="14" Text="{Binding Date}" />
+                                <Label FontSize="16" Text="{Binding Description}" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>
