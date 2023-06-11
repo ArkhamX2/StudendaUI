@@ -3,6 +3,7 @@
     x:Class="Studenda.View.AndroidView.LogInView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Studenda.Components.UI"
     BackgroundColor="{DynamicResource SecondaryWindowBackgroundColor}"
     HeightRequest="1034"
     MinimumHeightRequest="100"
@@ -35,10 +36,9 @@
                 Text="Login" />
 
             <Border Style="{StaticResource SignEntryBorderTheme}">
-                <Entry
+                <local:StudendaEntry
                     MaxLength="32"
-                    Placeholder="Login"
-                    Style="{StaticResource SignEntryTheme}"
+                    Placeholder="Login"                    
                     Text="{Binding Username}"
                     WidthRequest="340" />
             </Border>
@@ -53,17 +53,16 @@
                 Text="Password" />
 
             <Border Style="{StaticResource SignEntryBorderTheme}">
-                <Entry
+                <local:StudendaEntry
                     IsPassword="True"
                     MaxLength="16"
-                    Placeholder="Password"
-                    Style="{StaticResource SignEntryTheme}"
+                    Placeholder="Password"                    
                     Text="{Binding Password}"
                     WidthRequest="340" />
             </Border>
+
         </VerticalStackLayout>
-
-
+        
         <Button
             Margin="30,30,30,15"
             BackgroundColor="{DynamicResource ButtonColor}"

@@ -1,4 +1,6 @@
-﻿using Studenda.View;
+﻿using Microsoft.Maui.Controls.PlatformConfiguration;
+using Studenda.Components.UI;
+using Studenda.View;
 using Studenda.ViewModel;
 
 namespace Studenda;
@@ -13,6 +15,13 @@ public partial class App : Application
         MainViewModel mainViewModel = new MainViewModel();
 
         MainPage = new AppShell();
+
+        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(StudendaEntry), (Handler, view) =>
+        {
+#if __ANDROID__
+Handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+#endif
+        });
     }
     protected override Window CreateWindow(IActivationState activationState)
     {
@@ -24,7 +33,7 @@ public partial class App : Application
     private async void Window_Activated(object sender, EventArgs e)
     {
 
-#if ANDROID
+#if __ANDROID__
     
 #endif
 
