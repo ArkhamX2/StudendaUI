@@ -3,43 +3,15 @@
     x:Class="Studenda.View.AndroidView.ProfileView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:Studenda.Components.UI"
     xmlns:local="clr-namespace:Studenda.Components.UI"
     BackgroundColor="{DynamicResource MainWindowBackgroundColor}"
     Shell.NavBarIsVisible="False">
 
     <VerticalStackLayout>
-        <HorizontalStackLayout BackgroundColor="{DynamicResource PanelColor}">
-            <Button
-                x:Name="Notifications"
-                BackgroundColor="{DynamicResource PanelColor}"
-                ImageSource="notification_bell.png" />
 
-            <!--  TODO: Сделать так, чтобы не было видно границ кнопок  -->
-            <Button
-                x:Name="PreviousWeek"
-                BackgroundColor="{DynamicResource PanelColor}"
-                ImageSource="left_arrow.png" />
-            <Border StrokeShape="RoundRectangle 5">
-                <Label
-                    Background="#FFFFFF"
-                    FontSize="15"
-                    HorizontalTextAlignment="Center"
-                    Text="12.03 ... 19.03"
-                    TextColor="#371F76"
-                    VerticalTextAlignment="Center"
-                    WidthRequest="114" />
-            </Border>
-            <Button
-                x:Name="NextWeek"
-                BackgroundColor="{DynamicResource PanelColor}"
-                ImageSource="right_arrow.png" />
+        <components:NavigationBarComponent />
 
-            <Button
-                x:Name="BurgerMenu"
-                BackgroundColor="{DynamicResource PanelColor}"
-                Clicked="BurgerMenu_Clicked"
-                ImageSource="burger_menu.png" />
-        </HorizontalStackLayout>
         <Grid>
             <Border
                 Margin="20,20,0,0"

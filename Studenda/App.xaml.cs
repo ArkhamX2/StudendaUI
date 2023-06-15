@@ -10,8 +10,6 @@ public partial class App : Application
     {
         InitializeComponent();
 
-        MainViewModel mainViewModel = new MainViewModel();
-
         MainPage = new AppShell();
 
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(StudendaEntry), (Handler, view) =>
