@@ -43,13 +43,6 @@
 
             <VerticalStackLayout x:Name="ScheduleLayout" />
 
-            <Button
-                Margin="30"
-                BackgroundColor="{DynamicResource ButtonColor}"
-                Command="{Binding GoToProfileViewCommand}"
-                Style="{StaticResource AppButton}"
-                Text="Profile"
-                WidthRequest="340" />
 
         </VerticalStackLayout>
     </ScrollView>

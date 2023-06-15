@@ -8,6 +8,7 @@
     HeightRequest="1034"
     MinimumHeightRequest="100"
     MinimumWidthRequest="75"
+    Shell.NavBarIsVisible="False"
     WidthRequest="750">
     <VerticalStackLayout
         x:Name="LoginPageStackLayout"
@@ -38,7 +39,7 @@
             <Border Style="{StaticResource SignEntryBorderTheme}">
                 <local:StudendaEntry
                     MaxLength="32"
-                    Placeholder="Login"                    
+                    Placeholder="Login"
                     Text="{Binding Username}"
                     WidthRequest="340" />
             </Border>
@@ -56,7 +57,7 @@
                 <local:StudendaEntry
                     IsPassword="True"
                     MaxLength="16"
-                    Placeholder="Password"                    
+                    Placeholder="Password"
                     Text="{Binding Password}"
                     WidthRequest="340" />
             </Border>

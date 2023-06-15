@@ -12,4 +12,10 @@ public partial class NotificationView : ContentPage
 
         BindingContext = vm;
     }
+
+    private void BurgerMenu_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
+
 }

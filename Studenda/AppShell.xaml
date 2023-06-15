@@ -9,7 +9,7 @@
     HeightRequest="1034"
     Shell.TabBarIsVisible="False"
     WidthRequest="750">
-    
+
     <ShellContent
         Title="Login page"
         ContentTemplate="{DataTemplate android:LogInView}"
@@ -25,10 +25,22 @@
         Shell.FlyoutBehavior="Disabled" />
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Schedule" ContentTemplate="{DataTemplate android:ScheduleView}" Route="ScheduleView" />
-        <ShellContent Title="Profile" ContentTemplate="{DataTemplate android:ProfileView}" Route="ProfileView"/>
-        <ShellContent Title="Notifications" ContentTemplate="{DataTemplate android:NotificationView}" Route="NotificationView"/>
-        
+        <ShellContent
+            Title="Schedule"
+            ContentTemplate="{DataTemplate android:ScheduleView}"
+            Route="ScheduleView"
+            Shell.FlyoutBehavior="Disabled" />
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate android:ProfileView}"
+            Route="ProfileView"
+            Shell.FlyoutBehavior="Disabled" />
+        <ShellContent
+            Title="Notifications"
+            ContentTemplate="{DataTemplate android:NotificationView}"
+            Route="NotificationView"
+            Shell.FlyoutBehavior="Disabled" />
+
     </FlyoutItem>
 
     <Shell.FlyoutFooter>

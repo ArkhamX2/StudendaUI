@@ -4,82 +4,119 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Studenda.Components.UI"
-    BackgroundColor="{DynamicResource MainWindowBackgroundColor}">
-    <Grid>
-        <Border
-            Margin="20,20,0,0"
-            HeightRequest="160"
-            HorizontalOptions="Start"
-            StrokeShape="RoundRectangle 30"
-            Style="{StaticResource ProfileBorderTheme}"
-            VerticalOptions="Start"
-            WidthRequest="160">
-            <ImageButton />
-        </Border>
-        <Border Margin="200,50,10,10" Style="{StaticResource ProfileBorderTheme}">
-            <local:StudendaEntry Placeholder="Name" Style="{StaticResource ProfileEntryTheme}" />
-        </Border>
+    BackgroundColor="{DynamicResource MainWindowBackgroundColor}"
+    Shell.NavBarIsVisible="False">
 
-        <Border Margin="200,85,10,10" Style="{StaticResource ProfileBorderTheme}">
-            <local:StudendaEntry Placeholder="Surname" Style="{StaticResource ProfileEntryTheme}" />
-        </Border>
+    <VerticalStackLayout>
+        <HorizontalStackLayout BackgroundColor="{DynamicResource PanelColor}">
+            <Button
+                x:Name="Notifications"
+                BackgroundColor="{DynamicResource PanelColor}"
+                ImageSource="notification_bell.png" />
 
-        <Border Margin="200,120,10,10" Style="{StaticResource ProfileBorderTheme}">
-            <Grid>
+            <!--  TODO: Сделать так, чтобы не было видно границ кнопок  -->
+            <Button
+                x:Name="PreviousWeek"
+                BackgroundColor="{DynamicResource PanelColor}"
+                ImageSource="left_arrow.png" />
+            <Border StrokeShape="RoundRectangle 5">
+                <Label
+                    Background="#FFFFFF"
+                    FontSize="15"
+                    HorizontalTextAlignment="Center"
+                    Text="12.03 ... 19.03"
+                    TextColor="#371F76"
+                    VerticalTextAlignment="Center"
+                    WidthRequest="114" />
+            </Border>
+            <Button
+                x:Name="NextWeek"
+                BackgroundColor="{DynamicResource PanelColor}"
+                ImageSource="right_arrow.png" />
+
+            <Button
+                x:Name="BurgerMenu"
+                BackgroundColor="{DynamicResource PanelColor}"
+                Clicked="BurgerMenu_Clicked"
+                ImageSource="burger_menu.png" />
+        </HorizontalStackLayout>
+        <Grid>
+            <Border
+                Margin="20,20,0,0"
+                HeightRequest="160"
+                HorizontalOptions="Start"
+                StrokeShape="RoundRectangle 30"
+                Style="{StaticResource ProfileBorderTheme}"
+                VerticalOptions="Start"
+                WidthRequest="160">
+                <ImageButton />
+            </Border>
+            <Border Margin="200,50,10,10" Style="{StaticResource ProfileBorderTheme}">
+                <local:StudendaEntry Placeholder="Name" Style="{StaticResource ProfileEntryTheme}" />
+            </Border>
+
+            <Border Margin="200,85,10,10" Style="{StaticResource ProfileBorderTheme}">
+                <local:StudendaEntry Placeholder="Surname" Style="{StaticResource ProfileEntryTheme}" />
+            </Border>
+
+            <Border Margin="200,120,10,10" Style="{StaticResource ProfileBorderTheme}">
+                <Grid>
+                    <local:StudendaEntry
+                        HorizontalOptions="Start"
+                        IsReadOnly="True"
+                        Placeholder="Date of birth"
+                        Style="{StaticResource ProfileEntryTheme}"
+                        Text="{Binding DateOfBirth}"
+                        WidthRequest="155" />
+                    <DatePicker
+                        x:Name="DateOfBirth"
+                        Margin="155,0,0,0"
+                        BackgroundColor="Gray"
+                        HorizontalOptions="Center"
+                        TextColor="Black" />
+                </Grid>
+            </Border>
+
+            <Border
+                Margin="20,200,0,0"
+                HorizontalOptions="Start"
+                Style="{StaticResource ProfileBorderTheme}"
+                VerticalOptions="Start">
                 <local:StudendaEntry
-                    HorizontalOptions="Start"
-                    IsReadOnly="True"
-                    Placeholder="Date of birth"
+                    Margin="0,0,0,-4"
+                    Placeholder="Faculty"
                     Style="{StaticResource ProfileEntryTheme}"
-                    Text="{Binding DateOfBirth}"
-                    WidthRequest="155" />
-                <DatePicker
-                    x:Name="DateOfBirth"
-                    Margin="155,0,0,0"
-                    BackgroundColor="Gray"
-                    HorizontalOptions="Center"
-                    TextColor="Black" />
-            </Grid>
-        </Border>
+                    Text="{Binding Faculty.Name}" />
+            </Border>
 
-        <Border
-            Margin="20,200,0,0"
-            HorizontalOptions="Start"
-            Style="{StaticResource ProfileBorderTheme}"
-            VerticalOptions="Start">
-            <local:StudendaEntry
-                Margin="0,0,0,-4"
-                Placeholder="Faculty"
-                Style="{StaticResource ProfileEntryTheme}"
-                Text="{Binding Faculty.Name}" />
-        </Border>
+            <Border
+                Margin="20,235,0,0"
+                HorizontalOptions="Start"
+                Style="{StaticResource ProfileBorderTheme}"
+                VerticalOptions="Start">
+                <local:StudendaEntry
+                    Margin="0,0,0,-4"
+                    Placeholder="Course"
+                    Style="{StaticResource ProfileEntryTheme}"
+                    Text="{Binding Course.Name}" />
+            </Border>
 
-        <Border
-            Margin="20,235,0,0"
-            HorizontalOptions="Start"
-            Style="{StaticResource ProfileBorderTheme}"
-            VerticalOptions="Start">
-            <local:StudendaEntry
-                Margin="0,0,0,-4"
-                Placeholder="Course"
-                Text="{Binding Course.Name}"
-                Style="{StaticResource ProfileEntryTheme}"/>
-        </Border>
-
-        <Border
-            Margin="20,270,0,0"
-            HorizontalOptions="Start"
-            Style="{StaticResource ProfileBorderTheme}"
-            VerticalOptions="Start">
-            <local:StudendaEntry
-                Margin="0,0,0,-4"
-                BackgroundColor="Transparent"
-                MaxLength="16"
-                Placeholder="Group"
-                Style="{StaticResource ProfileEntryTheme}"
-                Text="{Binding Group.Name}" />
-        </Border>
+            <Border
+                Margin="20,270,0,0"
+                HorizontalOptions="Start"
+                Style="{StaticResource ProfileBorderTheme}"
+                VerticalOptions="Start">
+                <local:StudendaEntry
+                    Margin="0,0,0,-4"
+                    BackgroundColor="Transparent"
+                    MaxLength="16"
+                    Placeholder="Group"
+                    Style="{StaticResource ProfileEntryTheme}"
+                    Text="{Binding Group.Name}" />
+            </Border>
 
 
-    </Grid>
+        </Grid>
+
+    </VerticalStackLayout>
 </ContentPage>
