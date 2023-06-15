@@ -43,6 +43,7 @@ namespace Studenda.ViewModel
         [ObservableProperty]
         private int count;
 
+        //TODO: Возникают ошибки приявзки, но при этом всё отображается корректно. Нужно убрать ошибки привязки
         public NotificationViewModel()
         {
             NotificationCollection = new(NotificationList);

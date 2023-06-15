@@ -3,14 +3,45 @@
     x:Class="Studenda.View.AndroidView.ScheduleView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="{DynamicResource MainWindowBackgroundColor}">
+    BackgroundColor="{DynamicResource MainWindowBackgroundColor}"
+    Shell.NavBarIsVisible="False">
+
     <ScrollView>
         <VerticalStackLayout>
-            <Grid x:Name="NavbarGrid">
-                <Button Text="Menu"/>
-            </Grid>
+            <HorizontalStackLayout BackgroundColor="{DynamicResource PanelColor}">
+                <Button
+                    x:Name="Notifications"
+                    BackgroundColor="{DynamicResource PanelColor}"
+                    ImageSource="notification_bell.png" />
 
-                <VerticalStackLayout x:Name="ScheduleLayout" />
+                <!--  TODO: Сделать так, чтобы не было видно границ кнопок  -->
+                <Button
+                    x:Name="PreviousWeek"
+                    BackgroundColor="{DynamicResource PanelColor}"
+                    ImageSource="left_arrow.png" />
+                <Border StrokeShape="RoundRectangle 5">
+                    <Label
+                        Background="#FFFFFF"
+                        FontSize="15"
+                        HorizontalTextAlignment="Center"
+                        Text="12.03 ... 19.03"
+                        TextColor="#371F76"
+                        VerticalTextAlignment="Center"
+                        WidthRequest="114" />
+                </Border>
+                <Button
+                    x:Name="NextWeek"
+                    BackgroundColor="{DynamicResource PanelColor}"
+                    ImageSource="right_arrow.png" />
+
+                <Button
+                    x:Name="BurgerMenu"
+                    BackgroundColor="{DynamicResource PanelColor}"
+                    Clicked="BurgerMenu_Clicked"
+                    ImageSource="burger_menu.png" />
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout x:Name="ScheduleLayout" />
 
             <Button
                 Margin="30"
