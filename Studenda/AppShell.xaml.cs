@@ -1,15 +1,14 @@
-﻿using Studenda.View;
-using Studenda.View.AndroidView;
+﻿using Studenda.View.AndroidView;
 using Studenda.ViewModel;
 
 namespace Studenda;
 
 public partial class AppShell : Shell
 {
-	AppShellViewModel vm = new AppShellViewModel();
-	public AppShell()
-	{
-		InitializeComponent();
+    AppShellViewModel vm = new AppShellViewModel();
+    public AppShell()
+    {
+        InitializeComponent();
 
         BindingContext = vm;
 

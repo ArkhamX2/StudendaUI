@@ -9,7 +9,7 @@
     HeightRequest="1034"
     Shell.TabBarIsVisible="False"
     WidthRequest="750">
-
+    
     <ShellContent
         Title="Login page"
         ContentTemplate="{DataTemplate android:LogInView}"
@@ -28,6 +28,7 @@
         <ShellContent Title="Schedule" ContentTemplate="{DataTemplate android:ScheduleView}" Route="ScheduleView" />
         <ShellContent Title="Profile" ContentTemplate="{DataTemplate android:ProfileView}" Route="ProfileView"/>
         <ShellContent Title="Notifications" ContentTemplate="{DataTemplate android:NotificationView}" Route="NotificationView"/>
+        
     </FlyoutItem>
 
     <Shell.FlyoutFooter>

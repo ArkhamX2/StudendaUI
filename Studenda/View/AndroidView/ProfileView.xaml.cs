@@ -4,11 +4,11 @@ namespace Studenda.View.AndroidView;
 
 public partial class ProfileView : ContentPage
 {
-	ProfileViewModel vm = new ProfileViewModel();
-	public ProfileView()
-	{
-		InitializeComponent();
+    ProfileViewModel vm = new ProfileViewModel();
+    public ProfileView()
+    {
+        InitializeComponent();
 
-		BindingContext = vm;
-	}
+        BindingContext = vm;
+    }
 }

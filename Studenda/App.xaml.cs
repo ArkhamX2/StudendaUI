@@ -1,6 +1,4 @@
-﻿using Microsoft.Maui.Controls.PlatformConfiguration;
-using Studenda.Components.UI;
-using Studenda.View;
+﻿using Studenda.Components.UI;
 using Studenda.ViewModel;
 
 namespace Studenda;
@@ -8,9 +6,9 @@ namespace Studenda;
 public partial class App : Application
 {
     bool _launched = false;
-	public App()
-	{
-		InitializeComponent();
+    public App()
+    {
+        InitializeComponent();
 
         MainViewModel mainViewModel = new MainViewModel();
 
@@ -19,7 +17,7 @@ public partial class App : Application
         Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(StudendaEntry), (Handler, view) =>
         {
 #if __ANDROID__
-Handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+            Handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
 #endif
         });
     }
@@ -34,7 +32,7 @@ Handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
     {
 
 #if __ANDROID__
-    
+
 #endif
 
 #if WINDOWS

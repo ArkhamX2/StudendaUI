@@ -6,9 +6,11 @@
     BackgroundColor="{DynamicResource MainWindowBackgroundColor}">
     <ScrollView>
         <VerticalStackLayout>
-            <Grid x:Name="NavbarGrid" />
+            <Grid x:Name="NavbarGrid">
+                <Button Text="Menu"/>
+            </Grid>
 
-            <VerticalStackLayout x:Name="ScheduleLayout" />
+                <VerticalStackLayout x:Name="ScheduleLayout" />
 
             <Button
                 Margin="30"

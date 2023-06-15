@@ -1,10 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Studenda.ViewModel
 {
@@ -48,7 +43,7 @@ namespace Studenda.ViewModel
         [ObservableProperty]
         private int count;
 
-        public NotificationViewModel() 
+        public NotificationViewModel()
         {
             NotificationCollection = new(NotificationList);
             Count = NotificationCollection.Count;

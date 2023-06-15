@@ -1,9 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Studenda.ViewModel
 {
@@ -71,7 +66,7 @@ namespace Studenda.ViewModel
         private string telegramLink;
 
 
-        public ProfileViewModel() 
+        public ProfileViewModel()
         {
             FirstName = "admin";
             secondName = "admin";

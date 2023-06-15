@@ -4,12 +4,12 @@ namespace Studenda.View.AndroidView;
 
 public partial class SignUpView : ContentPage
 {
-	SignUpViewModel vm = new SignUpViewModel();
+    SignUpViewModel vm = new SignUpViewModel();
 
-	public SignUpView()
-	{
-		InitializeComponent();
+    public SignUpView()
+    {
+        InitializeComponent();
 
-		BindingContext = vm;
-	}
+        BindingContext = vm;
+    }
 }

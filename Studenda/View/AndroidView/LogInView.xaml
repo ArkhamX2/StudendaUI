@@ -62,7 +62,7 @@
             </Border>
 
         </VerticalStackLayout>
-        
+
         <Button
             Margin="30,30,30,15"
             BackgroundColor="{DynamicResource ButtonColor}"
