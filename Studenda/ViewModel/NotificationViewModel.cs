@@ -3,8 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace Studenda.ViewModel
 {
-    [ObservableObject]
-    public partial class NotificationViewModel
+    public partial class NotificationViewModel : ObservableObject
     {
 
         #region NotificationClass
@@ -38,7 +37,6 @@ namespace Studenda.ViewModel
 
         [ObservableProperty]
         private ObservableCollection<Notification> notificationCollection;
-
 
         [ObservableProperty]
         private int count;

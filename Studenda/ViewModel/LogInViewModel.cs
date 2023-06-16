@@ -4,8 +4,7 @@ using Studenda.View.AndroidView;
 
 namespace Studenda.ViewModel
 {
-    [ObservableObject]
-    public partial class LogInViewModel
+    public partial class LogInViewModel : ObservableObject
     {
         [ObservableProperty]
         private bool activityIndicatorIsRunning = true;
@@ -59,7 +58,7 @@ namespace Studenda.ViewModel
         }
 
         [RelayCommand]
-        private async void Create()
+        private void Create()
         {
             try
             {

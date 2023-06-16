@@ -83,6 +83,15 @@
 	  <MauiXaml Update="Components\UI\NavigationBarComponent.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Components\UI\ScheduleComponent.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Components\UI\ScheduleDayComponent.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Components\UI\SubjectComponent.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\AndroidView\ChoseRoleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

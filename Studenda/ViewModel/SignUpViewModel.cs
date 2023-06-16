@@ -3,8 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace Studenda.ViewModel
 {
-    [ObservableObject]
-    public partial class SignUpViewModel
+    public partial class SignUpViewModel : ObservableObject
     {
         [ObservableProperty]
         private string username;
@@ -23,7 +22,7 @@ namespace Studenda.ViewModel
         }
 
         [RelayCommand]
-        async private void CreateAccount()
+        private void CreateAccount()
         {
             try
             {

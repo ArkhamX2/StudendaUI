@@ -29,8 +29,7 @@ namespace Studenda.ViewModel
         }
     }
 
-    [ObservableObject]
-    public partial class ProfileViewModel
+    public partial class ProfileViewModel : ObservableObject
     {
         [ObservableProperty]
         private string firstName;

@@ -11,7 +11,8 @@
         <VerticalStackLayout>
 
             <components:NavigationBarComponent />
-            <VerticalStackLayout x:Name="ScheduleLayout" />
+
+            <components:ScheduleComponent Schedule="{Binding ScheduleList}" />
 
 
         </VerticalStackLayout>

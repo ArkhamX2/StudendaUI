@@ -4,8 +4,7 @@ using Studenda.View.AndroidView;
 
 namespace Studenda.ViewModel
 {
-    [ObservableObject]
-    public partial class NavigationBarViewModel
+    public partial class NavigationBarViewModel : ObservableObject
     {
         [ObservableProperty]
         private string weekBorders;
@@ -17,12 +16,9 @@ namespace Studenda.ViewModel
         }
 
         [RelayCommand]
-        async private void Notifications()
-        {
-            GoToNotificationView();
-        }
+        private void Notifications() => GoToNotificationView();
 
-        public NavigationBarViewModel() 
+        public NavigationBarViewModel()
         {
             WeekBorders = "12.03-19.03";
         }

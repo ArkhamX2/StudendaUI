@@ -4,8 +4,7 @@ using Studenda.View.AndroidView;
 
 namespace Studenda.ViewModel
 {
-    [ObservableObject]
-    public partial class AppShellViewModel
+    public partial class AppShellViewModel : ObservableObject
     {
         public AppShellViewModel()
         {

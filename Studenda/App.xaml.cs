@@ -1,5 +1,4 @@
 ﻿using Studenda.Components.UI;
-using Studenda.ViewModel;
 
 namespace Studenda;
 
