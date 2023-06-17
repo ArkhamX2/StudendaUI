@@ -8,6 +8,9 @@ public partial class AppShell : Shell
     AppShellViewModel vm = new AppShellViewModel();
     public AppShell()
     {
+
+
+    //TODO:Засунуть Navbar поверх всего в appshel
         InitializeComponent();
 
         BindingContext = vm;

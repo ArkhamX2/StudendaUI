@@ -4,6 +4,8 @@ namespace Studenda.Components.UI;
 
 public partial class ScheduleComponent : ContentView
 {
+    //TODO: Решить проблему с привязкой.Все показывает правильно, но выдаёт ошибки
+
     public static readonly BindableProperty ScheduleProperty = BindableProperty.Create(nameof(Schedule), typeof(List<DaySchedule>), typeof(ScheduleComponent),
         propertyChanged: (bindable, oldValue, newValue) =>
         {

@@ -78,8 +78,6 @@ namespace Studenda.ViewModel
                     {
                         new Subject("8.30","Математика","вц-303"),
                         new Subject("8.30","Среда","вц-303"),
-                        new Subject("8.30","Среда","вц-303"),
-                        new Subject("8.30","Среда","вц-303"),
                         new Subject("8.30","Математика","вц-303"),
                     }),
                     new DaySchedule("Понедельник",new List<Subject>()
